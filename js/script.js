@@ -1,9 +1,13 @@
-console.log('hello world!');
+
 const btn= document.getElementById('menu-btn');
 
-    //  btn.addEventListener('click',navtoggle);
-console.log(btn);
+btn.addEventListener('click',navtoggle);
 
-// function navtoggle(){
-//     btn.classList.toggle('open')
-// }
+const menu=document.getElementById('menu');
+
+
+function navtoggle(){
+    btn.classList.toggle('open')
+    menu.classList.toggle('flex')
+    menu.classList.toggle('hidden')
+}
